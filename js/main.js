@@ -99,6 +99,5 @@ reset.addEventListener('click', function(){
 
  function dessertMix() {
  if ( currentFruit !==null  && currentDessert !== null) {
-    console.log(currentFruit);
     document.getElementById('result').innerHTML = '<img src="' + images.mixes[currentFruit][currentDessert] + '"/>';
  }};
