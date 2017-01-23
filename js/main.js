@@ -41,49 +41,53 @@ var icecream = document.querySelector('.Dessert--icecream');
 var cake = document.querySelector('.Dessert--cake');
 var pie = document.querySelector('.Dessert--pie');
 
-var fruit = document.querySelector('Holder--fruit');
-var dessert = document.querySelector('Holder-dessert');
-// var result = document. querySelector('Holder--result');
+var fruit = document.querySelector('.Holder--fruit');
+var dessert = document.querySelector('.Holder-dessert');
+var result = document.querySelector('.Holder--result');
+
+var reset = document.querySelector('.Reset');
 
 
-apple.addEventListener('click', function(e) {
+apple.addEventListener('click', function() {
 
-  document.getElementById('fruit').innerHTML = '<img src="img/Apple.jpg"/>'
+  document.getElementById('fruit').innerHTML = '<img src=" ' + images.fruits.apple + '"/>';
   currentFruit = apple;
   console.log(currentFruit);
 });
 
 orange.addEventListener('click', function(e) {
-  document.getElementById('fruit').innerHTML = '<img src="img/Orange.jpg"/>'
+  document.getElementById('fruit').innerHTML = '<img src=" ' + images.fruits.orange + '"/>';
   currentFruit = orange;
   console.log(currentFruit);
 });
 
 banana.addEventListener('click', function(e) {
-  document.getElementById('fruit').innerHTML = '<img src="img/Banana.jpg"/>'
+  document.getElementById('fruit').innerHTML = '<img src=" ' + images.fruits.banana + '"/>';
   currentFruit = banana;
   console.log(currentFruit);
 });
 
-icecream.addEventListener('click', function(e) {
-  document.getElementById('dessert').innerHTML = '<img src="img/IceCream.jpg"/>'
+icecream.addEventListener('click', function() {
+  document.getElementById('dessert').innerHTML = '<img src=" ' + images.desserts.icecream + '"/>';
   currentDessert = icecream;
 });
 
 cake.addEventListener('click', function() {
-  document.getElementById('dessert').innerHTML = '<img src="img/Cake.jpg"/>'
+  document.getElementById('dessert').innerHTML = '<img src=" ' + images.desserts.cake + '"/>';
   currentDessert = cake;
 });
 
-pie.addEventListener('click', function(e) {
-  document.getElementById('dessert').innerHTML = '<img src="img/Pie.jpg"/>'
+pie.addEventListener('click', function() {
+  document.getElementById('dessert').innerHTML = '<img src=" ' + images.desserts.pie + '"/>';
   currentDessert = pie;
 });
 
-// function myFunction(e){
-//  if ( currentFruit === currentDessert){
-//    document.getElementById('result').innerHTML = '<img src="img/AppleIceCream.jpg"/>'
-//    console.log("this worked");
-//    console.log(e);
-// };
-// }
+
+reset.addEventListener('click', function(){
+  document.getElementById('fruit').innerHTML = '<img src=""/>'
+  document.getElementById('dessert').innerHTML = '<img src=""/>'
+  document.getElementById('result').innerHTML = '<img src=""/>'
+});
+
+
+'<img src=""/>'
